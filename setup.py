@@ -1,0 +1,33 @@
+from setuptools import setup, find_packages
+
+setup(name='cpgraph',
+      version='0.1.1',
+      description='cpgraph',
+      packages=find_packages(),
+      install_requires=[
+          'astor',
+          'asyncpg',
+          'click',
+          'tenacity',
+          'langfuse',
+          'litellm',
+          'openai',
+          'numpydoc',
+          'pathspec',
+          'pgvector',
+          'psutil',
+          'psycopg2-binary',
+          'pydantic>=2.0',
+          'pyperclip',
+          'pytest',
+          'pyyaml',
+          'python-Levenshtein',
+          'sqlalchemy',
+          'tiktoken',
+          'typing-extensions',
+          'uuid',
+          'fuzzywuzzy'
+      ],
+      author='Othmane Zoheir',
+      author_email='othmane@rumorz.io',
+      url='')

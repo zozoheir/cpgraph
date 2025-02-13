@@ -271,6 +271,7 @@ class CPGraph:
         except Exception as e:
             node.transition_state(State.FAILED)
             node.logger.error(f"Failed during execution: {pprint.pformat(traceback.format_exception(e))}")
+            return e
 
     def draw(self):
         """
